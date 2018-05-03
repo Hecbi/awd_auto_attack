@@ -7,10 +7,12 @@ Author:Homaebic
 脚本会每隔360秒从files/payload.txt取出攻击向量，攻击files/ip.txt中的每个ip，如果可以写入webshell，则写入不死马和进程守护。返回不死马的地址和进程守护反弹的端口。如果不可以写webshell，则根据配置读取flag。
 
 ## 用法：
-  python attack.py -t 360 -r 192.168.1.1 -i 3
-	-t [必选] 一轮攻击时间间隔
-	-r [可选] 反弹shell的地址
-	-i [可选地址] 反弹shell的时间间隔
+  ```python attack.py -t 360 -r 192.168.1.1 -i 3```
+-t [必选] 一轮攻击时间间隔
+
+-r [可选] 反弹shell的地址
+
+-i [可选地址] 反弹shell的时间间隔
 
 
 ## 文件夹结构：
