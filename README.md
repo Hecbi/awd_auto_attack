@@ -8,12 +8,6 @@ Author:Homaebic
 
 ## 用法：
   ```python attack.py -t 360 -r 192.168.1.1 -i 3```
-  
--t [必选] 一轮攻击时间间隔
-
--r [可选] 反弹shell的地址
-
--i [可选地址] 反弹shell的时间间隔
 
 
 ## 文件夹结构：
